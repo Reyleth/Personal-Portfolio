@@ -118,6 +118,10 @@ section {
     object-fit: cover;
 } 
 
+#projects .project-tile img.skyline {
+    object-position: left center;
+}
+
 #projects .project-tile p {
     font-size: 25px;
     padding: 10px;
