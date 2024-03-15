@@ -119,7 +119,7 @@ section {
 } 
 
 #projects .project-tile img.skyline {
-    object-position: left center;
+    !object-position: left center;
 }
 
 #projects .project-tile p {
