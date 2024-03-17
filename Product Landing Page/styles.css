@@ -1,4 +1,262 @@
+:root {
+    --background: #ffffff;
+    --secondary: #FC7A1E;
+    --tertiary: #d8cc34;
+    --paragraph: #0b0500;
+}
+
 * {
-    box-sizing: border-box;
-    border: 1px solid black;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    /* border: 1px solid black; */
+}
+
+html {
+    background-color: var(--background);
+}
+
+body {
+    background-color: grey;
+    font-size: larger;
+}
+
+header {
+    background-color: var(--background);
+}
+
+.logo {
+    margin-top: 15px;
+    width: 60px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.logo > img {
+    width: 60px;
+    padding-right: 5px;
+}
+
+
+
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    padding: 10px;
+    
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--paragraph);
+    padding: 0 10px;
+}
+
+.the-product {
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: 700;
+    font-family: 'montserrat', sans-serif;
+}
+
+#hero {
+    margin-top: 100px;
+}
+
+section::before {
+    display: block;
+    content: " ";
+    margin-top: -100px;
+    height: 100px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+section {
+    margin: 40px 20px;
+    text-align: center;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'fraunces', sans-serif;
+    margin-bottom: 10px;
+}
+
+.icon {
+    color: var(--secondary);
+    margin-right: 30px;
+}
+
+#features {
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-family: 'montserrat', sans-serif;
+}    
+
+#video {
+    width: 100%;
+    justify-content: center;
+}
+
+.product-image {
+    width: 100%;
+    margin: auto;
+    height: 500px;
+    border: 1px solid var(--paragraph);
+    border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.product1 {
+    background-image: url(https://ultimateuncoiled.com/wp-content/uploads/2021/05/Perfect_Alex.jpg);
+}
+
+.product2 {
+    background-image: url(https://ultimateuncoiled.com/wp-content/uploads/2021/05/Perfect_Alex.jpg);
+}
+
+.product3 {
+    background-image: url(https://ultimateuncoiled.com/wp-content/uploads/2021/05/Perfect_Alex.jpg);
+}
+
+.card {
+    background-color: var(--background);
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.inner-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.content {
+    font-family: 'montserrat', sans-serif;
+    color: var(--paragraph);
+    margin-bottom: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.main-price {
+    margin-right: 20px;
+    font-size: 30px;
+    font-family: 'fraunces', sans-serif;
+    color: var(--secondary);
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: var(--tertiary);
+
+}
+
+.header {
+    font-family: 'fraunces', sans-serif;
+    margin: 10px 0;
+    color: var(--paragraph);
+}
+
+.add {
+    background-color: var(--secondary);
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    color: var(--background);
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary);
+}
+
+#submit {
+    background-color: var(--secondary);
+    color: var(--paragraph);
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+    #navbar {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (450px < width < 600px) {
+    .card {
+        font-size: 0.85rem;
+    }
+    .product-image {
+        height: 400px;
+    }
+}
+
+@media only screen and (450px <= width ) {
+    #nav-bar {
+        flex-direction: row;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        max-width: 525px;
+    }
+    .inner-card {
+        width: 300px;
+        padding: 20px;
+    }
+    .product-image {
+        border-radius: 10px 10px 10px 10px;
+    }
+} 
+
+@media only screen and (width >= 1000px) {
+    #video {
+        width: 70%;
+    }
+    .product-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }

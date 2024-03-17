@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
     <title>Product Landing Page</title>
 </head>
 <body>
     <header id="header">
-        <div class="logo">
-            <!--img logo here-->
-        </div>
         <nav id="nav-bar">
+            <div class="logo">
+                <img src="./Brute_Justice.jpg"
+                     alt="Brute Justice"
+                     id="header-img">
+                <span class="the-product">TEA Clears</span>     
+            </div>
             <!--at least 3 ul here linking with each section-->
-            <ul>
+            <ul class="nav-links">
                 <li><a class="nav-link" href="#features">Features</a></li>
-                <li><a class="nav-link" href="#video">Video</a></li>
+                <li><a class="nav-link" href="#clear_video">Video</a></li>
                 <li><a class="nav-link" href="#pricing">Pricing</a></li>
             </ul>
         </nav>
@@ -24,19 +34,98 @@
        <h2>Fast. Efficient. TEA clears</h2>
        <p>We can make you a perfect legend in no time...</p> 
     </section>
-    <div class="container">
         <section id="features">
-            <!--product features here-->
+            <div class="feature">
+                <i class="ri-speed-fill ri-4x icon"></i>
+                <div>
+                    <h2>Fast clears</h2>
+                    <p>
+                        Once you provide us with access to your account we will complete the raid for you within 24 hours. Our teams are highly experienced and efficient.
+                    </p>
+                </div>
+            </div>
+            <div class="feature">
+                <i class="ri-empathize-fill ri-4x icon"></i>
+                <div>
+                    <h2>Quality Support</h2>
+                    <p>
+                        Our team is comitted to 100% customer satisfaction. Your character will be protected and kept safe while we clear the content.
+                    </p>
+                </div>
+            </div>
+            <div class="feature">
+                <i class="ri-folder-video-fill ri-4x icon"></i>
+                <div>
+                    <h2>Clear Recordings</h2>
+                    <p>
+                        The time spent on your account will be recorded for your viewing pleasure after completion. We will send you footage of the clear in MP4 format.
+                    </p>
+                </div>
+            </div>
         </section>
-        <section id="video">
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TC5sS4sB0TA?si=QPEL2VlV1Ul3AGRw" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        <section id="clear_video">
+            <iframe
+            id="video"  
+            height="315" 
+            src="https://www.youtube-nocookie.com/embed/TC5sS4sB0TA?si=QPEL2VlV1Ul3AGRw" 
+            title="YouTube video player" 
+            frameborder="0" allowfullscreen
+            ></iframe>
         </section>
         <section id="pricing">
-            <!--prices on different packages here & form-->
+            <h2>Prices</h2>
+            <div class="product-cards">
+                <div class="card">
+                    <div class="product-image product1"></div>
+                    <div class="inner card">
+                    <h1 class="header">1x Clear</h1>
+                    <p class="content">Our team will clear one time.</p>
+                    <div class="flex">
+                        <p class="main-price">$10.99</p>
+                        <p class="old-price">$20.99</p>
+                    </div>
+                    <button class="add">Add to Cart</button>
+                </div>
+            </div>
+                <div class="card">
+                    <div class="product-image product2"></div>
+                    <div class="inner card">
+                    <h1 class="header">3x Clear</h1>
+                    <p class="content">Our team will clear three times.</p>
+                    <div class="flex">
+                        <p class="main-price">$15.99</p>
+                        <p class="old-price">$30.99</p>
+                    </div>
+                    <button class="add">Add to Cart</button>
+                </div>
+            </div>
+                <div class="card">
+                    <div class="product-image product3"></div>
+                    <div class="inner card">
+                    <h1 class="header">5x Clear</h1>
+                    <p class="content">Our team will clear five times.</p>
+                    <div class="flex">
+                        <p class="main-price">$20.99</p>
+                        <p class="old-price">$50.99</p>
+                    </div>
+                    <button class="add">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section id="email-section">
+            <h2>Let's get in touch</h2>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input 
+                id="email"
+                type="email" required 
+                placeholder="Enter your email address" 
+                name="email" 
+                />
+                <input type="submit" id="submit" value="GET STARTED"> 
+            </form>
         </section>
         <footer>
             <p>Made by Ryley Croucher @ Mar 2024</p>
         </footer>
-    </div>
 </body>
 </html>
